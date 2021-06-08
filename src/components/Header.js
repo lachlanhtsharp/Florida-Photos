@@ -27,7 +27,7 @@ const Header = () => {
             <div className='Header-Title'>
                 Photos
             </div>
-            <div className='nav-links-container active'>
+            <div className='nav-links-container'>
                 <div className='date'>
                     2020
                 </div>
