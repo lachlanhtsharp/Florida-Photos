@@ -5,9 +5,7 @@ import { FaArrowAltCircleRight } from 'react-icons/fa';
 
 const DecemberCarousel = () => {
     const [current, setCurrent] = useState(0);
-    useEffect(() => {
-        console.log(length);
-    }, [])
+
 
     const data = DecCarouselData;
     const length = data.length;
