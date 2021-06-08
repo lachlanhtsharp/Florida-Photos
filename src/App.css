@@ -1,38 +1,244 @@
+* { 
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  /* border: 1px solid red; */
+}
+
+body {
+  /* border: 1px solid green; */
+  background-image: linear-gradient(white, rgb(206, 206, 206));
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+  /* border: 1px solid blue; */
+}
 .App {
-  text-align: center;
+  height: 100%;
+  overflow-x: hidden ;
+
+  /* border: 1px solid red; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Header {
+  height: 7vh;
+  background-color: #353546;
+  display: flex;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Header-Title {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  font-size: 20px;
+  user-select: none;
+  z-index: 1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Header-Icon {
+  background-color: #353546;
+  margin-left: 5vw;
+  margin-top: 1vh;
+  height: 5vh;
+  width: auto;
+  /* border: 1px solid red; */
+  color: white;
+  padding: 2px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.Header-Icon:hover {
+  color: rgb(148, 202, 62);
+  transition: color .5s ease-out;
+}
+
+.nav-links-container {
+  position: absolute;
+  top: 8vh;
+  left: 5vw;
+  background: #353546;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-around;
+  height: 40vh;
+  width: 10%;
+  border-radius: 10px;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 2px 2px #16161d;
+  transform: translateY(-2.5%);
+  transition: all .35s ease-out;
+}
+
+.nav-links1 {
+  /* border: 1px solid red; */
+  height: 3vh;
+}
+
+.nav-links-container.active {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateY(0%);
+}
+
+br {
+  color: black;
+}
+
+.date {
   color: white;
+  /* border: 1px solid red; */
+  user-select: none;
+  border-bottom: 1px solid white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
 }
 
-.App-link {
-  color: #61dafb;
+ul {
+  list-style: none;
+  /* border: 1px solid red; */
+  height: 25%;
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+li {
+  width: 100%;
+  height: 50%;
+  /* border: 1px solid yellow; */
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  height: auto;
+  text-decoration: none;
+  color: white;
+  /* border: 1px solid blue; */
+  font-family: 'Raleway', sans-serif;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 20px;
+  user-select: none;
+}
+
+a:hover {
+  color: rgb(148, 202, 62);
+  transition: color .5s ease-out;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .nav-links-container {
+    width: 20%;
   }
-  to {
-    transform: rotate(360deg);
+
+  a {
+    font-size: 14px;
   }
+}
+
+/* Carousels */
+
+.Carousel-Container-Outside {
+  /* border: 1px solid red; */
+  height: 92%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.Carousel-Container {
+  /* border: 1px solid blue; */
+  height: 90%;
+  width: 80%;
+  margin-right: 20px;
+}
+
+.Carousel-Description {
+  height: 90%;
+  width: 15%;
+  /* border: 1px solid red; */
+  margin-right: 20px;
+}
+
+.Carousel {
+  height: 100%;
+  display: flex;
+}
+
+.Carousel-Image-Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Carousel-Image {
+  height: 75vh;
+  box-shadow: 0px 0px 10px 0px black;
+  border-radius: 10px;
+  margin-left: 3vw;
+  margin-top: 2vh;
+}
+
+.Left-Arrow {
+  z-index: 1;
+  height: 50px;
+  width: 50px;
+  color: #353546;
+  left: 15vw;
+  top: 50vh;
+  position: absolute;
+  cursor: pointer;
+  transition: color .35s ease;
+}
+
+.Left-Arrow:hover {
+  color: #1b1b24;
+}
+
+.Right-Arrow {
+  z-index: 1;
+  height: 50px;
+  width: 50px;
+  color: #353546;
+  top: 50vh;
+  position: absolute;
+  right: 16vw;
+  cursor: pointer;
+  transition: color .35s ease;
+}
+
+.Right-Arrow:hover {
+  color: #1b1b24;
+}
+
+.slide {
+  opacity: 0;
+  user-select: none;
+  transition-duration: 1s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
+
+.slide-title {
+  user-select: none;
+  font-family: 'Raleway', 'Montserrat';
+  font-weight: bold;
+  font-size: 24px;
+  margin-top: 1vh;
 }
