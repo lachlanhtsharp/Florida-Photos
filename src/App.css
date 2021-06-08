@@ -80,6 +80,7 @@ body {
   box-shadow: 2px 2px #16161d;
   transform: translateY(-2.5%);
   transition: all .35s ease-out;
+  z-index: 2;
 }
 
 .nav-links1 {
