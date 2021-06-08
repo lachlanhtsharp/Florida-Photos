@@ -1,3 +1,4 @@
+import React, { useEffect } from 'react';
 import './App.css';
 
 import Header from './components/Header';
@@ -17,10 +18,26 @@ import {
 
 
 function App() {
+
+  const navbar = document.querySelector('.nav-links-container');
+
+  useEffect(() => {
+    const navbar = document.querySelector('.nav-links-container');
+  }, [])
+
+  const collapseNavbar = () => {
+    const navbar = document.querySelector('.nav-links-container');
+    if (navbar.classList[1] === 'active') {
+      navbar.classList.toggle('active');
+    } else {
+      console.log('Closed');
+    }
+  }
+
   return (
     <div className="App">
       <Header />
-      <div className='Carousel-Container-Outside'>
+      <div className='Carousel-Container-Outside' onClick={() => collapseNavbar()}>
         <div className='Carousel-Description'>
           <Route path='/December2020' component={ DecDesc } />
           <Route path='/January2021' component={ JanDesc } />
