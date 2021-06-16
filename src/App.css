@@ -250,6 +250,11 @@ a:hover {
 
 @media screen and (max-width: 768px) {
 
+  body {
+    background-image: none;
+    background-color: rgb(206, 206, 206);
+  }
+
   .Carousel {
     display: flex;
     flex-direction: column;
