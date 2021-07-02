@@ -29,6 +29,10 @@ body {
   /* border: 1px solid red; */
 }
 
+.Preload-Image {
+  display: none;
+}
+
 .Header {
   height: 7vh;
   background-color: #353546;
