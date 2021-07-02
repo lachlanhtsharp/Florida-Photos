@@ -13,16 +13,25 @@ import TheSpot from './components/CarouselAssets/December/The-Spot.jpg';
 // import TheViceroy from '../CarouselAssets/December/The-Viceroy.jpg';
 import Crewneck from './components/CarouselAssets/December/Crewneck.jpg';
 import Ruddy from './components/CarouselAssets/December/Ruddy-Turnstone.jpg';
-// import Sandpiper from '../CarouselAssets/December/Sandpiper-Strut.jpg';
-// import TheColdMoon from '../CarouselAssets/December/The-Cold-Moon.jpg';
-// import Eagle from '../CarouselAssets/December/Eagle-Breakfast.jpg';
-// import ModelEagle from '../CarouselAssets/December/Model-Eagle.jpg';
-// import Owls from '../CarouselAssets/December/What-are-you-doing.jpg';
-// import LittleBlueHeron from '../CarouselAssets/December/Almost-Perfect.jpg';
-// import Cormorant from '../CarouselAssets/December/Cormorant-Blue.jpg';
-// import GreenHeron from '../CarouselAssets/December/Green-Heron.jpg';
-// import BabyGator from '../CarouselAssets/December/Baby-Gator.jpg';
-// import Tim from '../CarouselAssets/December/Tim.jpg';
+import Sandpiper from './components/CarouselAssets/December/Sandpiper-Strut.jpg';
+import TheColdMoon from './components/CarouselAssets/December/The-Cold-Moon.jpg';
+import Eagle from './components/CarouselAssets/December/Eagle-Breakfast.jpg';
+import ModelEagle from './components/CarouselAssets/December/Model-Eagle.jpg';
+import Owls from './components/CarouselAssets/December/What-are-you-doing.jpg';
+import LittleBlueHeron from './components/CarouselAssets/December/Almost-Perfect.jpg';
+import Cormorant from './components/CarouselAssets/December/Cormorant-Blue.jpg';
+import GreenHeron from './components/CarouselAssets/December/Green-Heron.jpg';
+import BabyGator from './components/CarouselAssets/December/Baby-Gator.jpg';
+import Tim from './components/CarouselAssets/December/Tim.jpg';
+
+import Mirrors from './components/CarouselAssets/February/Mirrors.jpg';
+import SilverPools from './components/CarouselAssets/February/Silver-Pools.jpg';
+import TheFarSide from './components/CarouselAssets/February/The-Far-Side.jpg';
+
+import Canopy from './components/CarouselAssets/January/Canopy-Livin.jpg';
+import IslandTopper from './components/CarouselAssets/January/Island-Topper.jpg';
+import Kayak from './components/CarouselAssets/January/Kayak-to-Beautiful-Island.jpg';
+import Santee from './components/CarouselAssets/January/Santee116.jpg';
 
 import {
   BrowserRouter as Router,
@@ -65,7 +74,27 @@ function App() {
         </div>
         <img src={TheSpot} alt='The Spot' className='Preload-Image'/>
         <img src={Crewneck} alt='The Spot' className='Preload-Image'/>
-        <img src={Ruddy} alt='The Spot' className='Preload-Image'/>
+        <img src={Sandpiper} alt='The Spot' className='Preload-Image'/>
+        <img src={TheColdMoon} alt='The Spot' className='Preload-Image'/>
+        <img src={Eagle} alt='The Spot' className='Preload-Image'/>
+        <img src={ModelEagle} alt='The Spot' className='Preload-Image'/>
+        <img src={Owls} alt='The Spot' className='Preload-Image'/>
+        <img src={LittleBlueHeron} alt='The Spot' className='Preload-Image'/>
+        <img src={Cormorant} alt='The Spot' className='Preload-Image'/>
+        <img src={GreenHeron} alt='The Spot' className='Preload-Image'/>
+        <img src={BabyGator} alt='The Spot' className='Preload-Image'/>
+        <img src={Tim} alt='The Spot' className='Preload-Image'/>
+
+        <img src={Mirrors} alt='The Spot' className='Preload-Image'/>
+        <img src={SilverPools} alt='The Spot' className='Preload-Image'/>
+        <img src={TheFarSide} alt='The Spot' className='Preload-Image'/>
+
+        <img src={Canopy} alt='The Spot' className='Preload-Image'/>
+        <img src={IslandTopper} alt='The Spot' className='Preload-Image'/>
+        <img src={Kayak} alt='The Spot' className='Preload-Image'/>
+        <img src={Santee} alt='The Spot' className='Preload-Image'/>
+
+
       </div>
     </div>
   );
